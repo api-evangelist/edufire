@@ -1,7 +1,22 @@
 aid: edufire
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/edufire.png
 name: eduFire
-description: eduFire is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: eduFire was an online education startup surfaced as a portfolio company of Battery Ventures
+  and added to the API Evangelist network as a stub for enrichment. An enrichment pass on 2026-07-19 found
+  that the company's primary domain, edufire.com, no longer resolves (no DNS A or NS records), indicating
+  the company is defunct. No live developer portal, API surface, OpenAPI specification, SDK, or any other
+  artifact could be located to enrich, so this profile remains an identity-only stub.
 url: https://raw.githubusercontent.com/api-evangelist/edufire/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +24,34 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-domain-status: edufire.com does not resolve (no A, NS, or SOA records at 8.8.8.8) as of 2026-07-20;
+  the domain registration is still held (Namecheap, created 2007-10-24) but no DNS zone is published,
+  and https://edufire.com, https://www.edufire.com and https://api.edufire.com all fail to connect.
+x-do-not-confuse-with:
+- name: Edufire S.A.
+  url: https://edufire.org
+  note: Unrelated Spanish-language fire-safety training company (NFPA certification), HTTP 200 as of
+    2026-07-20. Not the eduFire online-learning startup. Do not enrich this domain into this profile.
+- name: github.com/edufire
+  url: https://github.com/edufire
+  note: Unrelated personal GitHub user account created 2016-10-07 with 2 unrelated repos (ASMA, assign).
+    Not a company org. Do not treat as a first-party source.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Education
+- EdTech
+- E-Learning
+- Defunct
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
