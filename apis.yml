@@ -37,7 +37,7 @@ x-do-not-confuse-with:
   url: https://github.com/edufire
   note: Unrelated personal GitHub user account created 2016-10-07 with 2 unrelated repos (ASMA, assign).
     Not a company org. Do not treat as a first-party source.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
